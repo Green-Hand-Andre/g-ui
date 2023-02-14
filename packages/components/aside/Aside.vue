@@ -1,21 +1,22 @@
 <template>
-    <button :class="[buttonType,buttonSize,bem.b()]">
+    <div :class="[bem.b()]">
         <slot></slot>
-    </button>
+    </div>
 </template>
 
 <script >
-    // import { createNamespace } from "../../utils/create";
-    // const bem = createNamespace("button");
+
     export default{
-        name:"GButton"
+        name:"ASide"
     }
 </script>
 
 <script setup>
-    import {computed} from "vue";
+    import {
+        computed
+    } from "vue";
     import { createNamespace } from "../../utils/create";
-    const bem = createNamespace("button");
+    const bem = createNamespace("aside");
     const props = defineProps({
         type:{
             require:false,
@@ -29,8 +30,7 @@
         }
     })
 
-    const buttonType = computed(()=>'p-button--'+props.type)
-    const buttonSize = computed(()=>'p-button--'+props.size)
+    
 
 
 </script>
