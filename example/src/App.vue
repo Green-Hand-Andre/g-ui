@@ -1,6 +1,6 @@
 <template>
     <div class="test">
-        hello
+        <g-button>自定义按钮</g-button>
     </div>
   
 </template>

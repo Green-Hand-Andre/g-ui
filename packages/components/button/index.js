@@ -1,6 +1,6 @@
 import GButton from './Button.vue'
 GButton.install = (app)=>{
-    app.component(GButton.name,Gbutton)
+    app.component(GButton.name,GButton)
 }
 
 // 单独导出Button对象
