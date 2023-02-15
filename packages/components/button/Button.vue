@@ -5,8 +5,6 @@
 </template>
 
 <script >
-    // import { createNamespace } from "../../utils/create";
-    // const bem = createNamespace("button");
     export default{
         name:"GButton"
     }
