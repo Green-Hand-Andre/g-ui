@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.prod.js --progress --color",
     "dev": "webpack serve --config webpack.dev.js --color --progress --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,9 +12,19 @@
   "author": "Gaozhiguo",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "css": "^3.0.0",
     "css-loader": "^6.7.3",
+    "cssnano": "^5.1.15",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
     "html-webpack-plugin": "^5.5.0",
-    "sass": "^1.58.0",
+    "node-sass": "^8.0.0",
+    "post": "0.0.1",
+    "sass": "^1.58.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "vue": "^3.2.47",

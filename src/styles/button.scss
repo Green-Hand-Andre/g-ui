@@ -1,6 +1,9 @@
 @import './base.scss';
 
-.g-button-defalult{
+.g-button--default{
+    background-color:$primaryColor;
+    border: 0;
+    border-radius: $borderRadius;
     :hover{
 
     }

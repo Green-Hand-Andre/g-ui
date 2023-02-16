@@ -27,8 +27,9 @@
         }
     })
 
-    const buttonType = computed(()=>'p-button--'+props.type)
-    const buttonSize = computed(()=>'p-button--'+props.size)
+
+    const buttonType = computed(()=>'g-button--'+props.type)
+    const buttonSize = computed(()=>'g-button--'+props.size)
 
 
 </script>

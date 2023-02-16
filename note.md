@@ -8,6 +8,14 @@ npm i vue-template-compiler -D
 //安装样式库
 npm i sass sass-loader -D
 npm i style-loader css-loader -D
+
+
+
+//安装依赖
+npm i gulp gulp-cli -D
+npm i gulp-sass gulp-sass-glob -D
+npm i sass node-sass -D
+npm i gulp-postcss post css cssnano autoprefixer -D 
 ```
 
 

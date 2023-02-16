@@ -16,7 +16,7 @@
         computed
     } from "vue";
     import { createNamespace } from "../../utils/create";
-    const bem = createNamespace("herder");
+    const bem = createNamespace("header");
     const props = defineProps({
         type:{
             require:false,

@@ -1,13 +1,19 @@
 const {name,version} = require('../package.json')
-import Button from "../packages/components/button"
+// import Button from "../packages/components/button"
+import * as Components from '../packages'
+export * from '../packages'
 const install=(app)=>{
     
-console.log(app,'install函数执行')
-app.use(Button)
+    Object.keys(Components).forEach(key =>{
+        console.log(Components)
+        app.use(Components[key])
+    })
+    
+
 }
 export default{
     name,
     version,
-    Button,
+    ...Components,
     install
 }

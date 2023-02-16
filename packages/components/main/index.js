@@ -1,5 +1,5 @@
 import GMain from './Main.vue'
-GHeader.install = (app)=>{
+GMain.install = (app)=>{
     app.component(GMain.name,GMain)
 }
 

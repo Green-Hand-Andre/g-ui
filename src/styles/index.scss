@@ -1,19 +1,14 @@
 @import './base.scss';
 @import './layout.scss';
+@import './button.scss';
+@import './aside.scss';
+@import './main.scss';
+@import './header.scss';
+@import './container.scss';
+
 .test{
     display: flex;
     color: $primaryColor;
 }
 
 
-$borderRadius:7px;
-
-$smallPaddingTop:2px;
-$smallPaddingLeft:5px;
-
-$defaultPaddingTop:5px;
-$defaultPaddingLeft:10px;
-
-
-$largePaddingTop:9px;
-$largePaddingLeft:14px;
