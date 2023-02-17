@@ -2,7 +2,7 @@
   "name": "g-ui",
   "version": "1.0.1",
   "description": "",
-  "main": "lib/index.js",
+  "main": "index.js",
   "files": [
     "lib",
     "src",
