@@ -26,6 +26,7 @@ function scss(){
         autoprefixer(),
         cssnano()
     ]
+    // 任务过程
     return src("src/styles/*.scss")
             .pipe(sassGlob())
             .pipe(sass())

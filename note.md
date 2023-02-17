@@ -16,6 +16,9 @@ npm i gulp gulp-cli -D
 npm i gulp-sass gulp-sass-glob -D
 npm i sass node-sass -D
 npm i gulp-postcss post css cssnano autoprefixer -D 
+
+npm version patch -m "构建本地测试包"
+npm pack
 ```
 
 

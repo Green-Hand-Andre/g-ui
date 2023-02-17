@@ -4,10 +4,14 @@
     background-color:$primaryColor;
     border: 0;
     border-radius: $borderRadius;
-    :hover{
+    color: $primaryTextColor;
+    &:hover{
+        background-color: $primaryHoverColor;
+     
 
     }
-    :focus{
+    &:focus{
+        background-color: $primaryActiveColor;
         
     }
 
