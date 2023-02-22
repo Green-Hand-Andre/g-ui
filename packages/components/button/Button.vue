@@ -1,5 +1,9 @@
 <template>
-    <button :class="[buttonType,buttonSize,bem.b()]">
+    <button disabled :class="[
+        bem.b(),
+        buttonSize,
+        bem.m(type),
+        bem.m(disabled?'disabled':'')]">
         <slot></slot>
     </button>
 </template>
@@ -14,6 +18,9 @@
     import {computed} from "vue";
     import { createNamespace } from "../../utils/create";
     const bem = createNamespace("button");
+    /*
+    type:default success waring failed 
+    */ 
     const props = defineProps({
         type:{
             require:false,
@@ -24,12 +31,16 @@
             require:false,
             type:String,
             default:'default'
+        },
+        disabled:{
+            require:false,
+            type:Boolean,
+            default:false
         }
     })
+    
 
 
-    const buttonType = computed(()=>'g-button--'+props.type)
-    const buttonSize = computed(()=>'g-button--'+props.size)
 
 
 </script>

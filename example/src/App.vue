@@ -1,5 +1,5 @@
 <template>
-    <div class="test">
+    <div>
         <g-header>
             header
         </g-header>
@@ -11,7 +11,9 @@
             mian
         </g-main>
         
-        <g-button>自定义按钮</g-button>
+        <g-button>默认按钮</g-button>
+        <g-button type="success">成功按钮</g-button>
+        <g-button type="success" disabled>成功按钮</g-button>
     </div>
   
 </template>

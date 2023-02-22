@@ -33,7 +33,7 @@ function _bem(prefixName, blockName, elementName, modifierName) {
  * @returns
  */
 function createBEM(prefixName) {
-    debugger
+    
     const b = (blockName) => _bem(prefixName, blockName, "", "");
     const e = (elementName) =>elementName ? _bem(prefixName, "", elementName, "") : "";
     const m = (modifierName) =>modifierName ? _bem(prefixName, "", "", modifierName) : "";

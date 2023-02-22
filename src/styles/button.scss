@@ -1,10 +1,12 @@
 @import './base.scss';
 
 .g-button--default{
+    font-size: 14px;
     background-color:$primaryColor;
     border: 0;
     border-radius: $borderRadius;
     color: $primaryTextColor;
+    padding: 12px 20px;
     &:hover{
         background-color: $primaryHoverColor;
      
@@ -12,6 +14,27 @@
     }
     &:active{
         background-color: $primaryActiveColor;
+        
+    }
+
+}
+
+
+
+.g-button--success{
+    font-size: 14px;
+    background-color:$successColor;
+    border: 0;
+    border-radius: $borderRadius;
+    color: $primaryTextColor;
+    padding: 12px 20px;
+    &:hover{
+        background-color: $successHoverColor;
+     
+
+    }
+    &:active{
+        background-color: $successActiveColor;
         
     }
 

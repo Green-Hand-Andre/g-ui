@@ -7,7 +7,7 @@
 <script >
 
     export default{
-        name:"ASide"
+        name:"GAside"
     }
 </script>
 
