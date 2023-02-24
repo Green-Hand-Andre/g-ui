@@ -1,5 +1,5 @@
 <template>
-    <button disabled :class="[
+    <button disabled="disabled" :class="[
         bem.b(),
         buttonSize,
         bem.m(type),
@@ -38,6 +38,8 @@
             default:false
         }
     })
+
+    debugger
     
 
 
