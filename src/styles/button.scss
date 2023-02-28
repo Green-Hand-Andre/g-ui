@@ -30,18 +30,22 @@
     padding: 12px 20px;
     &:hover{
         background-color: $successHoverColor;
-     
-
     }
     &:active{
         background-color: $successActiveColor;
-        
     }
 
 }
 
 
-// .g-button--disabled{
-//     pointer-events:none;
+.is-disabled{
+    cursor: not-allowed;
+    background-color: #b3e19d;
+    &:hover{
+        background-color: #b3e19d;
+    }
+    &:active{
+        background-color: #b3e19d;
+    }
 
-// }
+}

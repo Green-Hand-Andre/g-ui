@@ -1,9 +1,9 @@
 <template>
-    <button disabled="disabled" :class="[
+    <button :disabled="disabled" :class="[
         bem.b(),
         buttonSize,
         bem.m(type),
-        bem.m(disabled?'disabled':'')]">
+        bem.is('disabled',disabled)]">
         <slot></slot>
     </button>
 </template>
@@ -39,7 +39,7 @@
         }
     })
 
-    debugger
+   
     
 
 
