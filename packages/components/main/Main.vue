@@ -1,7 +1,7 @@
 <template>
-    <div :class="[bem.b()]">
+    <main :class="[bem.b()]">
         <slot></slot>
-    </div>
+    </main>
 </template>
 
 <script >

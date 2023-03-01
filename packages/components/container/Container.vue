@@ -1,7 +1,7 @@
 <template>
-    <div :class="[bem.b()]">
+    <section :class="[bem.b()]">
         <slot></slot>
-    </div>
+    </section>
 </template>
 
 <script >
@@ -13,7 +13,8 @@
 
 <script setup>
     import {
-        computed
+        computed,
+        useSlots
     } from "vue";
     import { createNamespace } from "../../utils/create";
     const bem = createNamespace("container");
@@ -28,6 +29,11 @@
             type:String,
             default:'default'
         }
+    })
+    const slots = useSlots();
+    console.log(slots)
+    const isVertical = computed(()=>{
+        
     })
 
     
