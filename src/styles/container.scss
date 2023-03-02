@@ -1,6 +1,10 @@
 .g-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     // flex-grow: 1;
     // flex-shrink: 0;
+}
+.is-isVertical{
+    display: flex;
+    flex-direction: row;
 }

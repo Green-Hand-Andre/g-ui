@@ -1,5 +1,7 @@
 <template>
-    <section :class="[bem.b()]">
+    <section :class="[
+        bem.b(),
+        bem.is('isVertical',isVertical)]">
         <slot></slot>
     </section>
 </template>
@@ -31,12 +33,20 @@
         }
     })
     const slots = useSlots();
-    console.log(slots)
+    
     const isVertical = computed(()=>{
+        let isGMain = false
+        if(slots && slots.default){
+           for(let slot = 0;slot<slots.default().length;slot++){
+                if(slots.default()[slot].type.name === 'GAside' || slots.default()[slot].type.name === 'GMain'){
+                    isGMain = true     
+                }
+            }
+        }
+        return isGMain
         
     })
 
-    
 
 
 </script>
